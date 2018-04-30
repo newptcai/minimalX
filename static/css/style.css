@@ -133,9 +133,10 @@ main a {
 }
 
 main blockquote {
-  border-left:6px solid;
+  border-left: 4px solid;
   border-color: black;
   padding-left: 16px;
+  margin: 20px;
 }
 
 main div.highlight {
@@ -370,6 +371,11 @@ div#contact ul li {
     font-size: 24pt;
     width: 40%;
     margin-right: -100px;
+  }
+
+  main blockquote {
+    border-left: 6px solid;
+    margin: 20px 40px;
   }
 
   .adjust-width {
