@@ -81,7 +81,7 @@
       <br>
       {% if SHARE_BUTTONS %}      
       <p style="font-size:10pt; font-style: italic;">{{ _('Did you like this article? Share it with your friends!') }}</p>
-      <div class="shariff" data-services="[{% for name in SHARE_BUTTONS %}&quot;{{ name }}&quot;{% if loop.index != SHARE_BUTTONS|length %},{% endif %}{% endfor %}]" data-title="{{ article.title }} - {{ SITENAME }}" {% if SHARE_BUTTONS.find == mail %}data-mail-url="mailto:" data-mail-subject="{{ _('Interesting post on %(sitename)s', sitename=SITENAME) }}" data-mail-body="{{ _('Hey, I just read this article and really enjoyed it. I\'m sure you also like it ;) %(url)s', url='%s/%s' | format(SITEURL, article.url)) }}" {% endif %}>
+      <div class="shariff" data-lang="{{DEFAULT_LANG}}" data-services="[{% for name in SHARE_BUTTONS %}&quot;{{ name }}&quot;{% if loop.index != SHARE_BUTTONS|length %},{% endif %}{% endfor %}]" data-title="{{ article.title }} - {{ SITENAME }}" {% if SHARE_BUTTONS.find == mail %}data-mail-url="mailto:" data-mail-subject="{{ _('Interesting post on %(sitename)s', sitename=SITENAME) }}" data-mail-body="{{ _('Hey, I just read this article and really enjoyed it. I\'m sure you also like it ;) %(url)s', url='%s/%s' | format(SITEURL, article.url)) }}" {% endif %}>
       </div>
       <br>
       {% endif %}
