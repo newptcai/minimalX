@@ -419,7 +419,3 @@ main#article-content img {
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
     max-width: 200px;
 }
-
-ul {
-    list-style-position: inside;
-}
