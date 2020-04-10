@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/w3.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/jqcloud.css">
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/shariff.min.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments-highlight-github.css">
 
@@ -134,7 +134,8 @@
               <h6>Social Media</h6>
               <ul>
                   {% for name, link in SOCIAL %}
-                  <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><span style="text-transform: capitalize;">{{ name }}</span> <i class="fa fa-{{ name }}"></i></a></li>
+                  <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><span
+                              style="text-transform: capitalize;">{{ name }}</span> <i class="fab fa-{{ name }}"></i></a></li>
                   {% endfor %}
                   {% for number in range(4 - SOCIAL|count) %}
                   <li class="empty"></li>
