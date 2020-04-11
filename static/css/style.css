@@ -408,6 +408,9 @@ div#contact ul li {
     margin-right: auto;
     max-width: 80%;
     max-height: 700px;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
 
 main#article-content img {
